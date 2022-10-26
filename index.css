@@ -1,0 +1,22 @@
+body{
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.tabla {
+    margin: auto;
+    width: 100%;
+}
+
+.statistics{
+    text-align: center;
+    margin: 10px auto;
+}
+
+.dates{
+    display: flex;
+}
+
+.dates > div {
+    margin: 5px;
+}
