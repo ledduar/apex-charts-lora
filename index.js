@@ -284,9 +284,9 @@ function showStatistics(date) {
 
     allData.forEach(({ metrica, data }) => {
         const rowBody = document.createElement('tr');
-        const media = calculateMedia(data);
-        const varianza = calculateVariance(data);
-        const sd = calculateSD(varianza);
+        const media = calculateMedia(data).toFixed(3);
+        const varianza = calculateVariance(data).toFixed(3);
+        const sd = calculateSD(varianza).toFixed(3);
         rowBody.innerHTML = `
             <td>${metrica}</td>
             <td>${media}</td>
